@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- REQUIRED FOR MOBILE FRIENDLY -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sarangi Suhas Bendre | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP RIGHT NAV BUTTONS -->
+  <div class="top-buttons">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="skills.html" class="nav-btn">Skills</a>
+    <a href="projects.html" class="nav-btn">Projects</a>
+    <a href="certifications.html" class="nav-btn">certifications</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <!-- LEFT TEXT -->
+    <div class="hero-text">
+      <h1>Hi,<br>I'm Sarangi Suhas Bendre</h1>
+      <h2>AI & ML Engineer</h2>
+      <p class="tagline">
+        Building intelligent solutions with clarity and precision.
+      </p>
+    </div>
+
+    <!-- RIGHT PROFILE -->
+    <div class="hero-profile">
+      <img src="Sarangi Bendre Photo.jpeg" alt="Sarangi Suhas Bendre">
+
+      <!-- BUTTONS BELOW PHOTO -->
+      <div class="profile-buttons">
+        <a href="#" class="btn primary" onclick="toggleContact(event)">Contact</a>
+        <a href="Sarangi_Suhas_Bendre_AI_ML_Resume.pdf" class="btn secondary" download>Download Resume</a>
+      </div>
+
+      <!-- INLINE CONTACT DETAILS -->
+      <div id="contactDetails" class="contact-details">
+        <p><strong>Email:</strong> sarangibendre655@gmail.com</p>
+        <p><strong>Phone:</strong> +91-9322308456</p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/sarangi-bendre" target="_blank">
+            linkedin.com/in/sarangi-bendre
+          </a>
+        </p>
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/SarangiBendre" target="_blank">
+            github.com/SarangiBendre
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    function toggleContact(event) {
+      event.preventDefault();
+      document.getElementById("contactDetails").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
